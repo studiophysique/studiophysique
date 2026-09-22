@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Physique | Musculação & Treinamento de Alta Performance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #050505;
+            color: #f3f4f6;
+        }
+        .glow-blue {
+            box-shadow: 0 0 35px rgba(0, 102, 255, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-[#050505] text-gray-100 selection:bg-blue-600 selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="bg-black border border-blue-600 px-3.5 py-2 rounded flex flex-col items-center glow-blue">
+                    <span class="text-xl sm:text-2xl font-black tracking-wider text-white">PHYSIQUE</span>
+                    <span class="w-full h-[2px] bg-blue-600 my-0.5"></span>
+                    <span class="text-[9px] tracking-[0.25em] text-gray-300 font-bold">WORKOUT STUDIO</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide">
+                <a href="#cultura" class="hover:text-blue-500 transition">O Studio</a>
+                <a href="#diferenciais" class="hover:text-blue-500 transition">Diferenciais</a>
+                <a href="#modalidades" class="hover:text-blue-500 transition">Planos</a>
+                <a href="#parceiros" class="hover:text-blue-500 transition">Convênios</a>
+                <a href="#depoimentos" class="hover:text-blue-500 transition">Avaliações</a>
+                <a href="#contato" class="hover:text-blue-500 transition">Localização</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20no%20Studio%20Physique." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition glow-blue">
+                    <i class="fab fa-whatsapp text-lg"></i> Aula Experimental
+                </a>
+                <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-neutral-900 px-4 pt-3 pb-6 space-y-3">
+            <a href="#cultura" class="block py-2 text-gray-300 hover:text-blue-500 font-medium">O Studio</a>
+            <a href="#diferenciais" class="block py-2 text-gray-300 hover:text-blue-500 font-medium">Diferenciais</a>
+            <a href="#modalidades" class="block py-2 text-gray-300 hover:text-blue-500 font-medium">Planos</a>
+            <a href="#parceiros" class="block py-2 text-gray-300 hover:text-blue-500 font-medium">Convênios</a>
+            <a href="#depoimentos" class="block py-2 text-gray-300 hover:text-blue-500 font-medium">Avaliações</a>
+            <a href="#contato" class="block py-2 text-gray-300 hover:text-blue-500 font-medium">Localização</a>
+            <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20no%20Studio%20Physique." target="_blank" class="w-full text-center block bg-blue-600 text-white py-3 rounded-lg font-bold mt-3">
+                <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-neutral-950 via-[#050505] to-black overflow-hidden px-4">
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#0066ff_1px,transparent_1px)] [background-size:28px_28px]"></div>
+        
+        <div class="relative max-w-5xl mx-auto text-center z-10 py-16">
+            <div class="inline-flex items-center gap-2 bg-blue-950/60 border border-blue-600/40 px-4 py-1.5 rounded-full text-blue-400 text-xs sm:text-sm font-bold mb-6">
+                <i class="fa-solid fa-star text-yellow-400"></i> Nota Máxima no Google (5.0) • Cristo Rei, Curitiba
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight uppercase mb-6 leading-tight">
+                Musculação Personalizada & <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-400 to-white">Resultados Reais.</span>
+            </h1>
+            
+            <p class="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                ✨ Somos um estúdio de musculação com equipamentos modernos, preparados para atender tanto iniciantes quanto alunos mais avançados.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20no%20Studio%20Physique." target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-black px-8 py-4 rounded-xl text-lg transition duration-300 glow-blue flex items-center justify-center gap-3 uppercase tracking-wider">
+                    <i class="fab fa-whatsapp text-2xl"></i> Agendar Aula Experimental
+                </a>
+                <a href="#modalidades" class="w-full sm:w-auto bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-gray-300 font-bold px-8 py-4 rounded-xl text-lg transition duration-300 uppercase tracking-wider">
+                    Ver Planos e Valores
+                </a>
+            </div>
+
+            <!-- Highlights bar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 pt-10 border-t border-neutral-900 text-left">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Turmas Reduzidas</h4>
+                        <p class="text-xs text-gray-400">Máximo 10 alunos por horário (marcado)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Atendimento Técnico</h4>
+                        <p class="text-xs text-gray-400">Personalizado para os seus objetivos</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Equipamentos Modernos</h4>
+                        <p class="text-xs text-gray-400">Para iniciantes e avançados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MANIFESTO / PROPOSTA -->
+    <section id="cultura" class="py-24 bg-black border-t border-b border-neutral-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-blue-500 font-bold uppercase tracking-widest text-xs bg-blue-950/40 px-3 py-1 rounded-full border border-blue-800/40">Nossa Proposta</span>
+                    <h2 class="text-3xl sm:text-5xl font-black uppercase mt-4 mb-6 leading-tight">
+                        Exclusividade e foco total na sua <span class="text-blue-500">evolução</span>.
+                    </h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        🎯 Nossa proposta é oferecer um atendimento técnico e personalizado, focado nos seus objetivos. Trabalhamos com turmas reduzidas — no máximo 10 alunos por horário (marcado) — para garantir um ambiente exclusivo, sem filas e com supervisão constante.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed mb-8">
+                        Seja você iniciante precisando de suporte na postura ou um aluno avançado buscando performance, nossa estrutura atende com excelência.
+                    </p>
+                    <a href="https://wa.me/5541984337362?text=Olá!%20Quero%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center gap-2 text-blue-400 font-bold hover:text-blue-300 transition text-lg">
+                        Agendar Horário <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-neutral-900/80 border border-neutral-800 p-6 rounded-2xl">
+                        <i class="fa-solid fa-user-check text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Avaliação Gratuita</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">Incluída para acompanhar o seu ponto de partida e evolução.</p>
+                    </div>
+                    <div class="bg-neutral-900/80 border border-neutral-800 p-6 rounded-2xl mt-6">
+                        <i class="fa-solid fa-credit-card text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Crédito Recorrente</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">Facilidade no pagamento e planos que cabem no seu orçamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS E VALORES -->
+    <section id="modalidades" class="py-24 bg-[#050505]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-3">Tabela de Preços</h2>
+                <p class="text-3xl sm:text-4xl font-black uppercase">Escolha o Plano Ideal para o Seu Treino</p>
+                <p class="text-gray-400 text-sm mt-3">✅ Atendimento personalizado (máx. 10 alunos por horário) | ✅ Avaliação física gratuita</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- PLANO SMART -->
+                <div class="bg-neutral-950 border border-neutral-900 rounded-3xl p-8 flex flex-col justify-between hover:border-blue-600/40 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs uppercase tracking-wider font-bold text-blue-400 bg-blue-950 px-3 py-1 rounded-full border border-blue-900">Horário Flexível</span>
+                                <h3 class="text-2xl font-black uppercase mt-3">Plano Smart</h3>
+                            </div>
+                            <span class="text-xs text-gray-400 bg-neutral-900 px-3 py-1.5 rounded-lg border border-neutral-800"><i class="fa-regular fa-clock text-blue-400 mr-1"></i> Seg a Sex: 09h às 17h<br>Sábados: 09h às 12h</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6">Ideal para quem tem flexibilidade de horário durante o dia com excelente custo-benefício.</p>
+                        
+                        <div class="space-y-4 mb-8 border-t border-neutral-900 pt-6">
+                            <div class="flex justify-between items-center bg-neutral-900/60 px-4 py-3 rounded-xl border border-neutral-800/60">
+                                <span class="text-sm font-semibold text-gray-300">Plano Anual</span>
+                                <span class="text-xl font-black text-blue-400">R$ 199,00<span class="text-xs text-gray-400 font-normal">/mês</span></span>
+                            </div>
+                            <div class="flex justify-between items-center bg-neutral-900/60 px-4 py-3 rounded-xl border border-neutral-800/60">
+                                <span class="text-sm font-semibold text-gray-300">Plano Semestral</span>
+                                <span class="text-xl font-black text-blue-400">R$ 259,00<span class="text-xs text-gray-400 font-normal">/mês</span></span>
+                            </div>
+                            <div class="flex justify-between items-center bg-neutral-900/60 px-4 py-3 rounded-xl border border-neutral-800/60">
+                                <span class="text-sm font-semibold text-gray-300">Plano Mensal</span>
+                                <span class="text-xl font-black text-blue-400">R$ 299,00<span class="text-xs text-gray-400 font-normal">/mês</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20contratar%20o%20Plano%20Smart." target="_blank" class="w-full bg-neutral-900 hover:bg-blue-600 text-white py-3.5 rounded-xl font-bold text-center transition uppercase tracking-wider text-sm border border-neutral-800">Assinar Plano Smart</a>
+                </div>
+
+                <!-- PLANO PREMIUM -->
+                <div class="bg-neutral-950 border-2 border-blue-600 rounded-3xl p-8 flex flex-col justify-between relative glow-blue">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] uppercase font-black tracking-widest px-4 py-1 rounded-full">
+                        Mais Completo
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs uppercase tracking-wider font-bold text-blue-400 bg-blue-950 px-3 py-1 rounded-full border border-blue-900">Todos os Dias</span>
+                                <h3 class="text-2xl font-black uppercase mt-3">Plano Premium</h3>
+                            </div>
+                            <span class="text-xs text-gray-400 bg-neutral-900 px-3 py-1.5 rounded-lg border border-neutral-800"><i class="fa-regular fa-clock text-blue-400 mr-1"></i> Seg a Sex: 05h às 22h<br>Sábados: 09h às 12h</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6">Acesso total aos horários da manhã, tarde e noite para treinar sem restrições.</p>
+                        
+                        <div class="space-y-4 mb-8 border-t border-neutral-900 pt-6">
+                            <div class="flex justify-between items-center bg-neutral-900/60 px-4 py-3 rounded-xl border border-neutral-800/60">
+                                <span class="text-sm font-semibold text-gray-300">Plano Anual</span>
+                                <span class="text-xl font-black text-blue-400">R$ 249,00<span class="text-xs text-gray-400 font-normal">/mês</span></span>
+                            </div>
+                            <div class="flex justify-between items-center bg-neutral-900/60 px-4 py-3 rounded-xl border border-neutral-800/60">
+                                <span class="text-sm font-semibold text-gray-300">Plano Semestral</span>
+                                <span class="text-xl font-black text-blue-400">R$ 299,00<span class="text-xs text-gray-400 font-normal">/mês</span></span>
+                            </div>
+                            <div class="flex justify-between items-center bg-neutral-900/60 px-4 py-3 rounded-xl border border-neutral-800/60">
+                                <span class="text-sm font-semibold text-gray-300">Plano Mensal</span>
+                                <span class="text-xl font-black text-blue-400">R$ 329,00<span class="text-xs text-gray-400 font-normal">/mês</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20contratar%20o%20Plano%20Premium." target="_blank" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3.5 rounded-xl font-bold text-center transition uppercase tracking-wider text-sm shadow-lg">Assinar Plano Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARCEIROS / CONVÊNIOS -->
+    <section id="parceiros" class="py-20 bg-black border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-3">Convênios Aceitos</h2>
+            <p class="text-3xl sm:text-4xl font-black uppercase mb-10">Treine Conosco Através dos Principais Aplicativos</p>
+            
+            <div class="flex flex-wrap items-center justify-center gap-6">
+                <div class="bg-neutral-950 border border-neutral-800 px-8 py-5 rounded-2xl font-black text-xl tracking-wider text-pink-500">
+                    WELLHUB / GYMPASS
+                </div>
+                <div class="bg-neutral-950 border border-neutral-800 px-8 py-5 rounded-2xl font-black text-xl tracking-wider text-green-400">
+                    TOTALPASS
+                </div>
+                <div class="bg-neutral-950 border border-neutral-800 px-8 py-5 rounded-2xl font-black text-xl tracking-wider text-yellow-400">
+                    GOLD+ / TP4
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="py-24 bg-[#050505] border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-1 text-yellow-400 text-xl mb-3">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h2 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-2">Avaliações do Google</h2>
+                <p class="text-3xl sm:text-4xl font-black uppercase">O que dizem os alunos</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-neutral-950 border border-neutral-900 p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 text-sm leading-relaxed italic mb-6">
+                        "Excelente estúdio! Atendimento impecável, professores extremamente atenciosos que corrigem cada movimento. Estrutura de primeira no Cristo Rei."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-neutral-900">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-white">R</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Renato S.</h4>
+                            <span class="text-xs text-gray-500">Aluno Verificado no Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-neutral-950 border border-neutral-900 p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 text-sm leading-relaxed italic mb-6">
+                        "O melhor lugar para quem quer focar em resultados sem a muvuca das academias tradicionais. A atenção personalizada faz toda a diferença."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-neutral-900">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-white">C</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Camila M.</h4>
+                            <span class="text-xs text-gray-500">Aluna Verificada no Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-neutral-950 border border-neutral-900 p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 text-sm leading-relaxed italic mb-6">
+                        "Ambiente excelente, equipamentos modernos e profissionais super capacitados. Nota 10 em todos os aspectos!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-neutral-900">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-white">F</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Felipe L.</h4>
+                            <span class="text-xs text-gray-500">Aluno Verificado no Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E CONTATO -->
+    <section id="contato" class="py-24 bg-black border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-3">Onde Estamos</h2>
+                    <p class="text-3xl sm:text-4xl font-black uppercase mb-6">Venha Conhecer o Studio</p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Localização privilegiada no bairro Cristo Rei em Curitiba, com fácil acesso e total comodidade para o seu treino.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Endereço</h4>
+                                <p class="text-gray-400 text-sm">Av. Presidente Affonso Camargo, 1939 - Loja 06 e 07<br>Cristo Rei, Curitiba - PR</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Horário Geral</h4>
+                                <p class="text-gray-400 text-sm">Segunda a Sexta: 05:00 às 22:00<br>Sábado: 09:00 às 12:00</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center text-blue-500 text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">WhatsApp</h4>
+                                <p class="text-gray-400 text-sm">(41) 98433-7362</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Redes e Acesso -->
+                <div class="bg-neutral-950 border border-neutral-900 rounded-3xl p-8 relative shadow-2xl">
+                    <h3 class="text-xl font-black uppercase mb-6">Conecte-se com a Physique</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <a href="https://instagram.com" target="_blank" class="flex items-center justify-between p-4 bg-neutral-900 hover:bg-neutral-800 rounded-xl transition border border-neutral-800">
+                            <span class="flex items-center gap-3 font-semibold text-sm"><i class="fab fa-instagram text-blue-500 text-xl"></i> Instagram @studiophysique_</span>
+                            <i class="fa-solid fa-arrow-right text-gray-500"></i>
+                        </a>
+                        <a href="https://www.facebook.com/p/Physique-Studio-61552813589096/" target="_blank" class="flex items-center justify-between p-4 bg-neutral-900 hover:bg-neutral-800 rounded-xl transition border border-neutral-800">
+                            <span class="flex items-center gap-3 font-semibold text-sm"><i class="fab fa-facebook text-blue-500 text-xl"></i> Facebook Studio Physique</span>
+                            <i class="fa-solid fa-arrow-right text-gray-500"></i>
+                        </a>
+                        <a href="https://maps.google.com/?cid=17675123522309488219" target="_blank" class="flex items-center justify-between p-4 bg-neutral-900 hover:bg-neutral-800 rounded-xl transition border border-neutral-800">
+                            <span class="flex items-center gap-3 font-semibold text-sm"><i class="fa-solid fa-map-location-dot text-blue-500 text-xl"></i> Ver no Google Maps</span>
+                            <i class="fa-solid fa-arrow-right text-gray-500"></i>
+                        </a>
+                    </div>
+
+                    <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-4 rounded-xl font-bold uppercase tracking-wider transition glow-blue">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-neutral-900 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="flex items-center gap-3">
+                <div class="bg-black border border-blue-600 px-3 py-1.5 rounded flex flex-col items-center">
+                    <span class="text-sm font-black tracking-wider text-white">PHYSIQUE</span>
+                    <span class="w-full h-[1.5px] bg-blue-600 my-0.5"></span>
+                    <span class="text-[7px] tracking-[0.2em] text-gray-400 font-bold">WORKOUT STUDIO</span>
+                </div>
+                <p class="text-xs text-gray-500">© 2026 Studio Physique. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="flex items-center gap-5 text-gray-400 text-lg">
+                <a href="https://instagram.com" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/p/Physique-Studio-61552813589096/" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/5541984337362" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5541984337362?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_20px_rgba(34,197,94,0.5)] transition hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => { menu.classList.add('hidden'); });
+        });
+    </script>
+</body>
+</html>
